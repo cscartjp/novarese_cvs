@@ -33,8 +33,9 @@ app/addons/novarese_cvs/
 - テンプレートファイル: フロントエンド/バックエンドの画面
 
 ### データベース設計
-- 商品テーブル（cscart_products）のchar1フィールドを使用
-- コンビニ決済固定フラグとして利用
+- 商品テーブル（cscart_products）に`cvs_fixed`フィールドを追加
+- データ型：CHAR(1)、デフォルト値：'N'
+- 'Y'でコンビニ決済固定、'N'で通常の決済方法選択
 
 ## 開発ガイドライン
 
@@ -50,11 +51,8 @@ app/addons/novarese_cvs/
     <sections>
         <section id="general">
             <items>
-                <item id="cvs_payment_method">
+                <item id="novarese_club_payment_method">
                     <type>selectbox</type>
-                    <variants>
-                        <!-- 決済方法のリスト -->
-                    </variants>
                 </item>
             </items>
         </section>
@@ -62,8 +60,41 @@ app/addons/novarese_cvs/
 </settings>
 ```
 
+### 設定項目のバリアント関数
+```php
+function fn_settings_variants_addons_novarese_cvs_novarese_club_payment_method(): array
+{
+    $params = ['status' => 'A'];
+    $payment_methods = fn_get_payments($params);
+    $payment_method_list = ['' => __('select')];
+    
+    foreach ($payment_methods as $payment_method) {
+        $payment_method_list[$payment_method['payment_id']] = $payment_method['payment'];
+    }
+    return $payment_method_list;
+}
+```
+
+### 言語ファイルの正しい書き方
+- アドオン設定: `SettingsSections::addon_id::section_id`
+- 設定オプション: `SettingsOptions::addon_id::option_id`
+- テンプレート用: `addon_id.language_key`
+- **重要**: テンプレートでは `{__("addon_id.key")}` を使用
+
 ### 管理画面での商品設定
-商品編集画面に「コンビニ決済固定」チェックボックスを追加し、char1フィールドに保存します。
+商品編集画面に「コンビニ決済固定」チェックボックスを追加し、cvs_fixedフィールドに保存します。
+
+### データベースクエリ
+```xml
+<queries>
+    <item for="install">
+        ALTER TABLE `?:products` ADD COLUMN `cvs_fixed` CHAR(1) DEFAULT 'N';
+    </item>
+    <item for="uninstall">
+        ALTER TABLE `?:products` DROP COLUMN `cvs_fixed`;
+    </item>
+</queries>
+```
 
 ## 参考ドキュメント
 
@@ -71,6 +102,7 @@ app/addons/novarese_cvs/
 - `docs/00cs-cart-addon-development-index.md`: 開発ガイド索引
 - `docs/03cs-cart-addon-structure.md`: アドオン基本構造
 - `docs/09cs-cart-addon-specific-points.md`: CS-Cart固有の開発ポイント
+- `docs/12cs-cart-addon-practical-knowledge.md`: 実践的な学習内容まとめ
 
 ### 外部リンク
 - [CS-Cart 開発者向け公式ドキュメント](https://docs.cs-cart.com/latest/developer_guide/index.html)
