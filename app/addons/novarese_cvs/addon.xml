@@ -35,9 +35,9 @@
             ALTER TABLE `?:products` ADD COLUMN `cvs_fixed` CHAR(1) DEFAULT 'N';
         </item>
         
-        <item for="uninstall">
+        <!-- <item for="uninstall">
             ALTER TABLE `?:products` DROP COLUMN `cvs_fixed`;
-        </item>
+        </item> -->
     </queries>
     
     <!-- インストール/アンインストール用の関数 -->

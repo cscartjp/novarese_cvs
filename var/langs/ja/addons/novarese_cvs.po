@@ -29,15 +29,15 @@ msgctxt "SettingsTooltips::novarese_cvs::novarese_club_payment_method"
 msgid "Select the payment method for convenience store payment"
 msgstr "コンビニ決済の決済方法を選択してください"
 
-msgctxt "novarese_cvs.cvs_fixed_flag"
+msgctxt "Languages::novarese_cvs.cvs_fixed_flag"
 msgid "CVS Payment Fixed"
 msgstr "コンビニ決済固定"
 
-msgctxt "novarese_cvs.cvs_fixed_flag_description"
+msgctxt "Languages::novarese_cvs.cvs_fixed_flag_description"
 msgid "Enable this option to fix payment method to convenience store payment only for this product"
 msgstr "この商品の決済方法をコンビニ決済のみに固定する場合はこのオプションを有効にしてください"
 
-msgctxt "novarese_cvs.convenience_store"
+msgctxt "Languages::novarese_cvs.convenience_store"
 msgid "Convenience Store"
 msgstr "コンビニエンスストア"
 
