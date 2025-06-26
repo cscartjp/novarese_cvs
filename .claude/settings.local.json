@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(chmod:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:www.supersaas.com)",
+      "Bash(mkdir:*)",
+      "Bash(npx tsc:*)",
+      "mcp__github__get_issue",
+      "Bash(sed:*)",
+      "Bash(cp:*)",
+      "mcp__line-bot__push_text_message",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(mv:*)",
+      "Bash(git rm:*)",
+      "Bash(npm test:*)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "mcp__github__get_file_contents",
+      "mcp__github__create_issue",
+      "mcp__filesystem__read_multiple_files"
+    ],
+    "deny": []
+  }
+}

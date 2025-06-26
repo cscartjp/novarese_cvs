@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>novarese_cvs</id>
+    <version>1.0.0</version>
+    <priority>100</priority>
+    <position>1</position>
+    <status>active</status>
+    <default_language>ja</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    
+    <!-- アドオンの互換性 -->
+    <compatibility>
+        <core_version>
+            <min>4.11.1</min>
+        </core_version>
+    </compatibility>
+    
+    <!-- アドオン設定項目 -->
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="cvs_payment_method">
+                        <type>selectbox</type>
+                        <variants>
+                            <item id="convenience_store">convenience_store</item>
+                        </variants>
+                        <default_value>convenience_store</default_value>
+                    </item>
+                    <item id="enable_cvs_fixed">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    
+    <!-- インストール/アンインストール用の関数 -->
+    <functions>
+        <item for="install">fn_novarese_cvs_install</item>
+        <item for="uninstall">fn_novarese_cvs_uninstall</item>
+    </functions>
+</addon>

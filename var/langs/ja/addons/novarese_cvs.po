@@ -1,0 +1,38 @@
+msgid ""
+msgstr "Project-Id-Version: novarese_cvs\\n"
+
+msgctxt "Addons::name::novarese_cvs"
+msgid "Novarese CVS Payment Fixed"
+msgstr "ノバレーゼ決済方法固定"
+
+msgctxt "Addons::description::novarese_cvs"
+msgid "Fix payment method for specific products to convenience store payment only"
+msgstr "特定商品の決済方法をコンビニ決済のみに固定します"
+
+msgctxt "novarese_cvs.cvs_payment_method"
+msgid "CVS Payment Method"
+msgstr "コンビニ決済方法"
+
+msgctxt "novarese_cvs.enable_cvs_fixed"
+msgid "Enable CVS Payment Fixed"
+msgstr "コンビニ決済固定を有効にする"
+
+msgctxt "novarese_cvs.cvs_fixed_flag"
+msgid "CVS Payment Fixed"
+msgstr "コンビニ決済固定"
+
+msgctxt "novarese_cvs.cvs_fixed_flag_description"
+msgid "Enable this option to fix payment method to convenience store payment only for this product"
+msgstr "この商品の決済方法をコンビニ決済のみに固定する場合はこのオプションを有効にしてください"
+
+msgctxt "novarese_cvs.convenience_store"
+msgid "Convenience Store"
+msgstr "コンビニエンスストア"
+
+msgctxt "novarese_cvs.settings"
+msgid "CVS Payment Fixed Settings"
+msgstr "コンビニ決済固定設定"
+
+msgctxt "novarese_cvs.general_settings"
+msgid "General Settings"
+msgstr "一般設定"
