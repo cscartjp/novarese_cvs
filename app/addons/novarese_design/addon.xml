@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon scheme="3.0">
+    <id>novarese_design</id>
+    <version>0.0.5</version>
+    <priority>7000</priority>
+    <position>0</position>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>ja</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <authors>
+        <author>
+            <name>CS-Cart.jp</name>
+            <email>info@cs-cart.jp</email>
+            <url>https://cs-cart.jp</url>
+        </author>
+    </authors>
+    <supplier>CS-Cart.jp</supplier>
+    <supplier_link>https://cs-cart.jp</supplier_link>
+    <compatibility>
+        <core_version/>
+    </compatibility>
+    <queries>
+        <!-- <item for="install">
+            ALTER TABLE `?:products` ADD COLUMN `congratulatory_flower` CHAR(1) DEFAULT 'N';
+        </item> -->
+
+        <!-- congratulatory_flower_hall -->
+        <!-- <item for="install">
+            ALTER TABLE `?:products` ADD COLUMN `congratulatory_flower_hall` INT(8) DEFAULT NULL;
+        </item> -->
+
+
+        <!-- チケット商品フラグ -->
+        <!-- <item for="install">
+            ALTER TABLE `?:products` ADD COLUMN `is_ticket` CHAR(1) DEFAULT 'N';
+        </item> -->
+
+
+        <!-- <item for="install">
+            CREATE TABLE `?:wedding_halls` (
+                `hall_id` mediumint(8) NOT NULL AUTO_INCREMENT,
+                `hall` varchar(128) NOT NULL,
+                `zipcode` varchar(10) NOT NULL,
+                `country` varchar(64) NOT NULL DEFAULT 'JP',
+                `state` varchar(64) NOT NULL,
+                `city` varchar(64) NOT NULL,
+                `address` varchar(255) NOT NULL,
+                `address_2` varchar(255) DEFAULT NULL,
+                `phone` varchar(64) DEFAULT NULL,
+                PRIMARY KEY (`hall_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item> -->
+
+        <!-- <item for="uninstall">
+            ALTER TABLE `?:products` DROP COLUMN `congratulatory_flower`;
+            ALTER TABLE `?:products` DROP COLUMN `congratulatory_flower_hall`;
+        </item> -->
+
+        <!-- チケット商品フラグ -->
+        <!-- <item for="uninstall">
+            ALTER TABLE `?:products` DROP COLUMN `is_ticket`;
+        </item> -->
+
+
+        <!-- <item for="uninstall">
+            DROP TABLE `?:wedding_halls`;
+        </item> -->
+    </queries>
+</addon>

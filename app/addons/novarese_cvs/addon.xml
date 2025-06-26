@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <addon scheme="3.0">
     <id>novarese_cvs</id>
-    <version>1.0.0</version>
+    <version>0.0.1</version>
     <priority>100</priority>
     <position>1</position>
     <status>active</status>
@@ -20,21 +20,25 @@
         <sections>
             <section id="general">
                 <items>
-                    <item id="cvs_payment_method">
+                    <item id="novarese_club_payment_method">
                         <type>selectbox</type>
-                        <variants>
-                            <item id="convenience_store">convenience_store</item>
-                        </variants>
-                        <default_value>convenience_store</default_value>
-                    </item>
-                    <item id="enable_cvs_fixed">
-                        <type>checkbox</type>
-                        <default_value>Y</default_value>
                     </item>
                 </items>
             </section>
         </sections>
     </settings>
+    
+    <!-- インストール/アンインストール用のSQLクエリ -->
+    <queries>
+        <!-- コンビニ決済固定フラグ -->
+        <item for="install">
+            ALTER TABLE `?:products` ADD COLUMN `cvs_fixed` CHAR(1) DEFAULT 'N';
+        </item>
+        
+        <item for="uninstall">
+            ALTER TABLE `?:products` DROP COLUMN `cvs_fixed`;
+        </item>
+    </queries>
     
     <!-- インストール/アンインストール用の関数 -->
     <functions>

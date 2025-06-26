@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"Last-Translator: cscartjp <tommy@cs-cart.jp>\n"
+"PO-Revision-Date: 2015-07-15 15:00-0900\n"
+
+msgctxt "Addons::name::amazon_pay_cv2"
+msgid "Amazon Pay CV2"
+msgstr "Amazon Pay CV2"
+
+msgctxt "Addons::description::amazon_pay_cv2"
+msgid "Amazon Pay CV2 による決済を利用可能にします。"
+msgstr "Amazon Pay CV2 による決済を利用可能にします。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_notice"
+msgid "Amazon Pay CV2 に関する設定情報を入力してください。"
+msgstr "Amazon Pay CV2 に関する設定情報を入力してください。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_account_settings"
+msgid "アカウント情報"
+msgstr "アカウント情報"
+
+msgctxt "Languages::jp_amazon_pay_cv2_connections_settings"
+msgid "接続設定"
+msgstr "接続設定"
+
+msgctxt "Languages::jp_amazon_pay_cv2_merchant_id"
+msgid "出品者ID"
+msgstr "出品者ID"
+
+msgctxt "Languages::jp_amazon_pay_cv2_store_id"
+msgid "Store ID"
+msgstr "Store ID"
+
+msgctxt "Languages::jp_amazon_pay_cv2_public_key"
+msgid "Public Key"
+msgstr "Public Key"
+
+msgctxt "Languages::jp_amazon_pay_cv2_private_key"
+msgid "Private Key"
+msgstr "Private Key"
+
+msgctxt "Languages::jp_amazon_pay_cv2_button_settings"
+msgid "ボタン設定"
+msgstr "ボタン設定"
+
+msgctxt "Languages::jp_amazon_pay_cv2_button_color"
+msgid "ボタンの色"
+msgstr "ボタンの色"
+
+msgctxt "Languages::jp_amazon_pay_cv2_button_color.gold"
+msgid "ゴールド"
+msgstr "ゴールド"
+
+msgctxt "Languages::jp_amazon_pay_cv2_button_color.lightgray"
+msgid "ライトグレー"
+msgstr "ライトグレー"
+
+msgctxt "Languages::jp_amazon_pay_cv2_button_color.darkgray"
+msgid "ダークグレー"
+msgstr "ダークグレー"
+
+msgctxt "Languages::block_amazon_pay_cv2_button"
+msgid "Amazon checkout buttons"
+msgstr "「Amazon pay cv2」ボタン"
+
+msgctxt "Languages::block_amazon_pay_cv2_button_description"
+msgid "Amazon checkout buttons"
+msgstr "「Amazon pay cv2」ボタン"
+
+msgctxt "Languages::amazon_pay_cv2_button"
+msgid "Amazon buttons"
+msgstr "Amazonボタン"
+
+msgctxt "Languages::amazon_pay_cv2_auth_id_prefix"
+msgid "Prefix for Authorization ID"
+msgstr "販売事業者注文番号のプリフィックス（オプション。半角英数のみ）"
+
+msgctxt "Languages::amazon_pay_cv2_auth_id_prefix.tooltip"
+msgid "Prefix for Authorization ID"
+msgstr "CS-Cart側で生成する販売事業者注文番号の先頭に付与する文字列。<br />販売事業者注文番号の重複を防ぐため、複数のショップでAmazon Payを利用する場合に設定してください。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_checkout_page"
+msgid "Amazon checkout"
+msgstr "Amazonアカウントでお支払い"
+
+msgctxt "Languages::jp_amazon_pay_cv2_logout"
+msgid "Checkout by other payment method"
+msgstr "他の方法でお支払い"
+
+msgctxt "Languages::jp_amazon_pay_cv2_payment_method"
+msgid "支払方法"
+msgstr "支払方法"
+
+msgctxt "Languages::jp_amazon_pay_cv2_phone"
+msgid "電話番号"
+msgstr "電話番号"
+
+msgctxt "Languages::jp_amazon_pay_cv2_name"
+msgid "氏名"
+msgstr "氏名"
+
+msgctxt "Languages::jp_amazon_pay_cv2_address3"
+msgid "会社名"
+msgstr "会社名"
+
+msgctxt "Languages::jp_amazon_pay_cv2_private_key.error"
+msgid "Private Key ファイルが存在していません"
+msgstr "Private Key ファイルが存在していません"
+
+msgctxt "Languages::jp_amazon_pay_cv2_error"
+msgid "Amazon Pay エラー"
+msgstr "Amazon Pay エラー"
+
+msgctxt "Languages::jp_amazon_pay_cv2_amazon_reference_id"
+msgid "AmazonリファレンスID"
+msgstr "AmazonリファレンスID"
+
+msgctxt "Languages::jp_amazon_pay_cv2_amazon_merchant_reference_id"
+msgid "販売事業者注文番号"
+msgstr "販売事業者注文番号"
+
+msgctxt "Languages::jp_amazon_pay_cv2_charge_id"
+msgid "Charge ID"
+msgstr "Charge ID"
+
+msgctxt "Languages::jp_amazon_pay_cv2_familyname_kana"
+msgid "セイフリガナ"
+msgstr "セイフリガナ"
+
+msgctxt "Languages::jp_amazon_pay_cv2_firstname_kana"
+msgid "メイフリガナ"
+msgstr "メイフリガナ"
+
+msgctxt "Languages::jp_amazon_pay_cv2_payment_settings"
+msgid "決済設定"
+msgstr "決済設定"
+
+msgctxt "Languages::jp_amazon_pay_cv2_capture_now"
+msgid "即時売上"
+msgstr "即時売上"
+
+msgctxt "Languages::jp_amazon_pay_cv2_creation_timestamp"
+msgid "処理日時"
+msgstr "処理日時"
+
+msgctxt "Languages::jp_amazon_pay_cv2_expiration_timestamp"
+msgid "与信有効期限日"
+msgstr "与信有効期限日"
+
+msgctxt "Languages::jp_amazon_pay_cv2_status"
+msgid "決済ステータス"
+msgstr "決済ステータス"
+
+msgctxt "Languages::jp_amazon_pay_cv2_status.Authorized"
+msgid "与信"
+msgstr "与信"
+
+msgctxt "Languages::jp_amazon_pay_cv2_status.Captured"
+msgid "売上"
+msgstr "売上"
+
+msgctxt "Languages::jp_amazon_pay_cv2_product_add_to_cart"
+msgid "商品詳細ページに「Amazonアカウントでお支払い」ボタンを表示"
+msgstr "商品詳細ページに「Amazonアカウントでお支払い」ボタンを表示"
+
+msgctxt "Languages::jp_amazon_pay_cv2_create_account"
+msgid "注文手続きページにおける「Amazonアカウントのデータを用いて会員登録」チェックボックスをデフォルトでチェックされた状態にする"
+msgstr "注文手続きページにおける「Amazonアカウントのデータを用いて会員登録」チェックボックスをデフォルトでチェックされた状態にする"
+
+msgctxt "Languages::jp_amazon_pay_cv2_amazon_register"
+msgid "Amazonアカウントのデータを用いて会員登録"
+msgstr "Amazonアカウントのデータを用いて会員登録"
+
+msgctxt "Languages::jp_amazon_pay_cv2_amazon_error_user"
+msgid "このAmazonアカウントはお使いいただけません。このAmazonアカウントのEメールアドレスを使用した会員アカウントがすでに存在します。"
+msgstr "このAmazonアカウントはお使いいただけません。このAmazonアカウントのEメールアドレスを使用した会員アカウントがすでに存在します。"
+
+msgctxt "Languages::amazon_pay_cv2_button_label"
+msgid "Amazonアカウントにご登録の住所・クレジットカード情報を利用して、簡単にご注文が出来ます。"
+msgstr "Amazonアカウントにご登録の住所・クレジットカード情報を利用して、簡単にご注文が出来ます。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_login.message"
+msgid "ショップにログインしました。"
+msgstr "ショップにログインしました。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_login_error.message"
+msgid "AmazonログインEメールに紐付いたショップのユーザーIDが存在しないため、ショップにログインできませんでした。ショップにログインした状態でAmazonの決済を一度実行すると、次回からはAmazonログインでショップにもログインできます。"
+msgstr "AmazonログインEメールに紐付いたショップのユーザーIDが存在しないため、ショップにログインできませんでした。ショップにログインした状態でAmazonの決済を一度実行すると、次回からはAmazonログインでショップにもログインできます。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_login_linked.message"
+msgid "AmazonログインEメールとショップのユーザーIDを紐付けました。次回からはAmazonにログインするとショップにもログインできます。"
+msgstr "AmazonログインEメールとショップのユーザーIDを紐付けました。次回からはAmazonにログインするとショップにもログインできます。"
+
+msgctxt "Languages::jp_amazon_pay_cv2_display_payment_list"
+msgid "支払い方法の選択肢に表示する"
+msgstr "支払い方法の選択肢に表示する"
